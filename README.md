@@ -72,7 +72,7 @@ This project demonstrates how data could be streamed from Amazon RabbitMQ to a S
 * http://{your-ip-address}:8080/actuator/hawtio
 
 
-#### Steps to build and deploy
+## Steps to build and deploy
 
 1. mvn clean install
 2. cd target
