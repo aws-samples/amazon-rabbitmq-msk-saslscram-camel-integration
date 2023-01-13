@@ -10,6 +10,8 @@ This project demonstrates how data could be streamed from Amazon RabbitMQ to a S
 * [Apache Kafka](https://kafka.apache.org/) is an open source highly scalable real-time messaging system used in event driven communications / distributed event processing .
 * [Apache Camel](https://camel.apache.org/) is an opensource integration framework supporting various enterprise integration patterns
 
+### TODO
+1. Integrate with AWS Secrets Manager.
 
 ### Pre-requisites:
 1. Amazon Rabbit MQ is setup to have public access (associated with a public subnet) and is listening on port 5671. 
