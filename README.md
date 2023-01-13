@@ -1,6 +1,9 @@
 # amazon-rabbitmq-msk-saslscram-camel-integration
 
-This project demonstrates how data from Amazon RabbitMQ could be pushed to a SASL/SCRAM enabled Amazon MSK, through Apache Camel. 
+This project demonstrates how data could be streamed from Amazon RabbitMQ to a SASL/SCRAM enabled Amazon MSK, through Apache Camel. 
+
+### Workflow
+![Camel Connector](/CamelConnector.png?raw=true)
 
 
 * [RabbitMQ](https://www.rabbitmq.com/) is a popular open source message broker with a vast range of functionality such as flexible routing/dead letter exchanges/multi-protocol support.
@@ -12,6 +15,14 @@ This project demonstrates how data from Amazon RabbitMQ could be pushed to a SAS
 1. Amazon Rabbit MQ is setup to have public access (associated with a public subnet) and is listening on port 5671. 
 2. MSK is setup with SASL/SCRAM authentication (https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html#msk-password-tutorial) in a private subnet.
 3. Apache Camel runs on an EC2 in a public subnet in the same VPC as Amazon MQ and Amazon MSK.
+4. Maven to build the project.
+    ```
+      mvn clean install
+    ```
+5. jre >=8 to run the project.
+    ``` 
+      java -jar camel-kafka-sasl-scram-connector-1.0-SNAPSHOT.jar 
+    ```
 
 <br>
 <br>
@@ -60,3 +71,9 @@ This project demonstrates how data from Amazon RabbitMQ could be pushed to a SAS
  monitor/manage camel routes. Its available as a springboot actuator and is accessible at
 * http://{your-ip-address}:8080/actuator/hawtio
 
+
+#### Steps to build and deploy
+
+1. mvn clean install
+2. cd target
+3. java -jar camel-kafka-sasl-scram-connector-1.0-SNAPSHOT.jar 
