@@ -3,7 +3,7 @@
 This project demonstrates how data could be streamed from Amazon RabbitMQ to a SASL/SCRAM enabled Amazon MSK, through Apache Camel. 
 
 ### Workflow
-![Camel Connector](https://github.com/aws-samples/amazon-rabbitmq-msk-saslscram-camel-integration/blob/dev/CamelConnector.png)
+![CamelConnector](https://user-images.githubusercontent.com/25897220/212338755-aca97740-b9dc-433f-b34e-e89b76a4ca52.png)
 
 
 * [RabbitMQ](https://www.rabbitmq.com/) is a popular open source message broker with a vast range of functionality such as flexible routing/dead letter exchanges/multi-protocol support.
