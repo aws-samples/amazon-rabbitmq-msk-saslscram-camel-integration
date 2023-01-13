@@ -17,11 +17,11 @@ This project demonstrates how data could be streamed from Amazon RabbitMQ to a S
 1. Amazon Rabbit MQ is setup to have public access (associated with a public subnet) and is listening on port 5671. 
 2. MSK is setup with SASL/SCRAM authentication (https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html#msk-password-tutorial) in a private subnet.
 3. Apache Camel runs on an EC2 in a public subnet in the same VPC as Amazon MQ and Amazon MSK.
-4. Maven to build the project.
+4. [Install Maven](https://maven.apache.org/install.html) to build the project. 
     ```
       mvn clean install
     ```
-5. jre >=8 to run the project.
+5. [Install jre](https://openjdk.org/install/) >=8 to run the project.
     ``` 
       java -jar camel-kafka-sasl-scram-connector-1.0-SNAPSHOT.jar 
     ```
